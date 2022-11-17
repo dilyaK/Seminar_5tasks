@@ -1,6 +1,8 @@
 ﻿// Задайте одномерный массив, заполненный случайными числами. 
 //Найдите сумму элементов, стоящих на нечетных позициях.
 
+Console.Write("Enter the number of elements: ");
+int a = Convert.ToInt32(Console.ReadLine());
 
 void FillArray(int[] array)
 {
@@ -23,8 +25,7 @@ void SumOddDigits(int[] array)
     Console.Write($"The sum of odd numbers: {SumOddDigits}");
 }
 
-Console.Write("Enter the number of elements: ");
-int a = Convert.ToInt32(Console.ReadLine());
+
 int[] array = new int[a];
 FillArray(array);
 PrintArray(array);
